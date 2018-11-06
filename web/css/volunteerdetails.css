@@ -1,0 +1,101 @@
+/*--//donordetails--*/
+.adminvolunteerdetails
+{
+    background:url('../images/abc.jpg') no-repeat 0% 87% fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+/*--//donordetails--*/
+#volunteerdetails {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#volunteerdetails td, #volunteerdetails th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#volunteerdetails tr:nth-child(even){background-color: #f2f2f2;}
+
+#volunteerdetails tr:hover {background-color: #ddd;}
+
+#volunteerdetails th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+.button1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:50%;
+}
+.button2 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:50%;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align:center;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+
+#email{
+    width: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: transparent;
+    border-style: none;
+}
+
+#adminvolunteerdetails{
+    text-align: center;
+}
+#vd{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align:center;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+    font-weight: bold;
+}

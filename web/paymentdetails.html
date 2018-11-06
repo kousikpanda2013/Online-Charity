@@ -1,0 +1,134 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="css/paymentdetails.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary JavaScript plugins) -->
+    <script type='text/javascript' src="js/jquery-1.11.1.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+</head>
+<body>
+<!-- header -->
+<div class="header">
+    <div class="logo">
+        <h1><a href="donorafterlogin.html">Charity</a></h1>
+    </div>
+    <!-- start header menu -->
+    <div class="header-top">
+        <div class="head-nav">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="donatecloth.html">Cloth </a></li>
+                            <li><a href="donatemoney.html">Money</a></li>
+                            <li><a href="donatebook.html">Book</a></li>
+                            <li><a href="donatebook.html">Food</a></li>
+                            <li><a href="donatehistory.jsp">Donate History</a></li>
+                            <li><a href="Logout">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="clearfix"> </div>
+        <!-- search-scripts -->
+        <script src="js/classie.js"></script>
+        <script src="js/uisearch.js"></script>
+        <script>
+            new UISearch( document.getElementById( 'sb-search' ) );
+        </script>
+        <!-- //search-scripts -->
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!-- header -->
+<!-- co-ntact -->
+<div class="payment">
+    <div class="details">
+        <div class="payment-main">
+            <h3>Enter Payment Details</h3>
+            <form action="PaymentDetails" method="post" style="text-align: center">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="email" placeholder="Email" pattern="[^ @]*@[^ @]*"  required>
+                <input type="text" name="mobile"  maxlength="10" pattern="\d{10}" placeholder="Enter Your Mobile No" required>
+                <input type="text" name="transaction" maxlength="30" placeholder="Enter Your Transaction Id" required>
+                <input type="number" name="amount" min="1" max="150000000" placeholder="Enter Your Donate Amount" required>
+                <input type="text" list="paymentmethod" name="paymentmethod" placeholder="Choose Your Payment Method" required>
+                <datalist id="paymentmethod">
+                    <option value="BHIM UPI">
+                    <option value="PAYTM WALLET">
+                    <option value="UPI ID">
+                </datalist></li>
+                <input placeholder="Enter Your Transaction Date" name="transactiondate" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                <input type="submit" value="Submit" >
+            </form>
+            <div class="clear"> </div>
+        </div>
+    </div>
+</div>
+<!-- co-ntact -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="col-md-3 footer-left">
+            <h3>Mobile</h3>
+            <p>8001993699</p>
+        </div>
+        <div class="col-md-3 footer-left">
+            <h3>E-Mail Us</h3>
+            <p>onlinecharity1@gmail.com</p>
+        </div>
+        <div class="col-md-3 footer-left">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/Online-charity-578452189177752/"><i class="facebok"> </i></a></li>
+                <li><a href="https://twitter.com/?request_context=signup"><i class="twiter"> </i></a></li>
+                <li><a href="https://plus.google.com/u/2/discover"><i class="goog"> </i></a></li>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+        <div class="col-md-3 footer-left">
+            <h3>Address</h3>
+            <p>Koel Campus,KIIT,Bhubaneswar,India</p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="foot-bottom" id="footbottom">
+            <p>Copyrights © 2018 Charity. All rights reserved </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

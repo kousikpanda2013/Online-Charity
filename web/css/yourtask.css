@@ -1,0 +1,110 @@
+
+.task
+{
+    background:url('../images/yourtask.png') no-repeat 0% 87% fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*--element start here--*/
+.task1 {
+    width: 34%;
+    margin:0em auto 0em;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+.task1 h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+/*--block-2--*/
+.task-main {
+    background: #fff;
+    padding: 2em;
+    border-radius: 4px;
+    box-shadow: 0 -1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+}
+.task-main h3 {
+    font-size: 2.5em;
+    color: #883485;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.task-main input[type="text"] {
+    font-size: 1em;
+    font-weight: 500;
+    color:black;
+    padding: 0.8em 1.2em 0.8em 1em;
+    width: 92%;
+    outline: none;
+    margin-top: 1em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.task-main input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background:#883485;
+    border: none;
+    padding: 0.8em 1em;
+    width:50%;
+    margin: 0.7em 0em;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.task-main input[type="submit"]:hover{
+    background: #887E34;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+#volunteer {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#volunteer td, #volunteer th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#volunteer tr:nth-child(even){background-color: #f2f2f2;}
+
+#volunteer tr:hover {background-color: #ddd;}
+
+#volunteer th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:50%;
+}
+
+
+.volunteertask{
+    text-align: center;
+}

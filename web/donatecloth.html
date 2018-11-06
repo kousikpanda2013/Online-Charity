@@ -1,0 +1,204 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="css/donatecloth.css" rel='stylesheet' type='text/css' />
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary JavaScript plugins) -->
+    <script type='text/javascript' src="js/jquery-1.11.1.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+</head>
+<body onload="myFunction()">
+<!-- header -->
+<div class="header">
+    <div class="logo">
+        <h1><a href="#">Charity</a></h1>
+    </div>
+    <!-- start header menu -->
+    <div class="header-top">
+        <div class="head-nav">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="donatecloth.html">Cloth </a></li>
+                            <li><a href="donatemoney.html">Money</a></li>
+                            <li><a href="donatebook.html">Book</a></li>
+                            <li><a href="donatefood.html">Food</a></li>
+                            <li><a href="donatehistory.jsp">Donate History</a></li>
+                            <li><a href="donorchangepassword.html">Change Password</a></li>
+                            <li><a href="Logout">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="clearfix"> </div>
+        <!-- search-scripts -->
+        <script src="js/classie.js"></script>
+        <script src="js/uisearch.js"></script>
+        <script>
+            new UISearch( document.getElementById( 'sb-search' ) );
+        </script>
+        <!-- //search-scripts -->
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!-- header -->
+<!-- co-ntact -->
+<div class="agile-header">
+    <h1>Donate Your Cloth Here</h1>
+    <p>One Of Our Volunteer Will Contact You Soon And Pickup Your Donate Things From Your Giving Address</p>
+</div>
+<!--//header-->
+<!--main-->
+<div class="agileits-main">
+    <div class="wrap">
+        <form action="DonateCloth" method="post">
+            <ul>
+                <li class="text">name  :  </li>
+                <li><input name="name" type="text" required></li>
+            </ul>
+            <ul>
+                <li class="text">E-mail  :  </li>
+                <li><input name="email" type="text"  pattern="[^ @]*@[^ @]*" required></li>
+            </ul>
+            <ul>
+                <li class="text">Contact no  :  </li>
+                <li><input name="mobile" type="text" maxlength="10" pattern="\d{10}" required></li>
+            </ul>
+            <ul>
+                <li class="text">Choose :  </li>
+                <li> <input type="text" list="item" name="item" placeholder="Choose Your Donate Item" required>
+                    <datalist id="item">
+                        <option value="Pant">
+                        <option value="Shirt">
+                        <option value="Kurti">
+                        <option value="T-Shirt">
+                        <option value="Winter Wear">
+                        <option value="Others">
+                    </datalist></li>
+            </ul>
+            <ul>
+                <li class="text">Village:  </li>
+                <li><input name="vill" type="text" required></li>
+            </ul>
+            <ul>
+                <li class="text"> Post:  </li>
+                <li><input name="post" type="text" required></li>
+            </ul>
+            <ul>
+                <li class="text">pin code  :  </li>
+                <li><input name="pin" type="text" maxlength="6" pattern="\d{6}" required></li>
+            </ul>
+            <ul>
+                <li class="text"> P.S:  </li>
+                <li><input name="ps" type="text" required></li>
+            </ul>
+            <ul>
+                <li class="text">city  :  </li>
+                <li><input name="city" type="text" required></li>
+            </ul>
+            <ul>
+                <li class="text">District:  </li>
+                <li><input name="dist" type="text" required></li>
+            </ul>
+            <ul>
+                <li class="text">state  :  </li>
+                <li><input name="state" type="text" required></li>
+            </ul>
+            <ul>
+                <li class="text">country  :  </li>
+                <li><input name="country" value="India" readonly="readonly" type="text"></li>
+            </ul>
+            <ul>
+                <li class="text">Date :  </li>
+                <li><input name="date" type="text" id="demo" readonly="readonly" required></li>
+                <script>
+                    function myFunction() {
+                        var date_now= new Date();
+                        var str_date=date_now.getDate() +'-';
+                        str_date+=date_now.getMonth()+'-';
+                        str_date+=date_now.getFullYear()+',';
+                        str_date+=date_now.getHours()+':';
+                        str_date+=date_now.getMinutes()+':';
+                        str_date+=date_now.getSeconds();
+                        document.getElementById('demo').value= str_date;
+                    }
+                </script>
+            </ul>
+            <ul>
+                <li class="text">Any Message  :  </li>
+                <li><textarea name="message" maxlength="200" placeholder="Write your message within 200 character"></textarea></li>
+            </ul>
+            <div class="clear"></div>
+            <div class="agile-submit">
+                <input type="submit" value="Donate">
+                <input type="reset" value="reset">
+            </div>
+        </form>
+    </div>
+</div>
+<!-- co-ntact -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="col-md-3 footer-left">
+            <h3>Mobile</h3>
+            <p>8001993699</p>
+        </div>
+        <div class="col-md-3 footer-left">
+            <h3>E-Mail Us</h3>
+            <p>onlinecharity1@gmail.com</p>
+        </div>
+        <div class="col-md-3 footer-left">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/Online-charity-578452189177752/"><i class="facebok"> </i></a></li>
+                <li><a href="https://twitter.com/?request_context=signup"><i class="twiter"> </i></a></li>
+                <li><a href="https://plus.google.com/u/2/discover"><i class="goog"> </i></a></li>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+        <div class="col-md-3 footer-left">
+            <h3>Address</h3>
+            <p>Koel Campus,KIIT,Bhubaneswar,India</p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="foot-bottom" id="footbottom">
+            <p>Copyrights © 2018 Charity. All rights reserved </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
